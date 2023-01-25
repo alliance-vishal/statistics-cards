@@ -1,0 +1,31 @@
+.grey-bg {
+    font-size: 14px;
+    background-color: #F5F7FA;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-padding {
+    padding: 100px 0
+}
+
+#minimal-statistics h3,
+#stats-subtitle h3,
+#minimal-statistics p,
+#stats-subtitle p{
+    --bs-card-color: rgba(64, 78, 103, 1);
+    color: var(--bs-card-color);
+}
+
+#minimal-statistics h3::before,
+#stats-subtitle h3::before{
+    content: attr(data-title);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    font-size: 40px;
+    z-index: 0;
+    opacity: .1;
+    color: #2f2974;
+    font-weight: 700;
+}
